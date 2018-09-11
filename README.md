@@ -15,15 +15,17 @@
 
 > k8 by example -- straight to the point, simple execution.
 
-## Usage
-
-```sh
-
-```
-
 ## Install
 
 ```sh
-
+make install
+```
+# Scale both replication controllers
+```sh
+kubectl scale rc redis --replicas=3
+kubectl scale rc redis-sentinel --replicas=3
 ```
 
+# See Also
+* https://redis.io/topics/cluster-tutorial
+* https://github.com/kubernetes/examples/tree/master/staging/storage/redis
