@@ -18,6 +18,8 @@
 ## Install
 
 ```sh
+git clone https://github.com/mateothegreat/k8-byexamples-redis-cluster && cd k8-byexamples-redis-cluster
+git submodule update --init
 make install
 ```
 # Scale both replication controllers
